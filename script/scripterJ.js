@@ -22,6 +22,36 @@ $(document).ready(function(){
       });
     }  // End if
   });
+   $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+  
+  window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
+  
+ /*    $("#clientView").load("client/ClientView.html",function(requestURL,statusURL,xhr){
+		if(statusURL="success")
+		{
+		  alert("File Uploaded Succesfully");	
+		}
+		if(statusURL="error")
+		{
+		  alert("Error: File Not Found"+xhr.status +"" +xhr.statusURL);	
+		}
+	}); */
+	
+ 
 });
 
 
