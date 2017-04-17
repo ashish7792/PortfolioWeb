@@ -8,7 +8,7 @@ body, html {
 
  
  
-.bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4,.bgimg-5{
+.bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7{
   position: relative;
   opacity: 1.00;
   background-attachment: fixed;
@@ -38,6 +38,16 @@ body, html {
 
 .bgimg-5 {
   background-image: url("bg1.jpg");
+   min-height: 400px;
+}
+
+.bgimg-6 {
+  background-image: url("p8.jpg");
+   min-height: 400px;
+}
+
+.bgimg-7{
+  background-image: url("Res.png");
    min-height: 400px;
 }
 
@@ -106,7 +116,7 @@ button {
 a {
   text-decoration: none;
   font-size: 22px;
-  color: black;
+  color: white;
 }
 
 button:hover, a:hover {
