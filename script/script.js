@@ -13,7 +13,7 @@ function showPage() {
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main-container").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.body.style.backgroundColor = "rgba(0, 0, 0, 0.19)";
 	
 	
 }
@@ -62,3 +62,22 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+function sendMail() 
+{
+         var link = "mailto:ashish7792@gmail.com"
+         + "?cc=waghmare.vishal910@gmail.com"
+         + "&subject=" + escape("This is my Message...")
+         + "&body=" + escape(document.getElementById('subject').value);
+
+     window.location.href = link;
+ }
+
+
+
+
+
+
+
+
