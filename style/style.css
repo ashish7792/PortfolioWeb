@@ -23,7 +23,7 @@ body, html {
 }
 
 .bgimg-2 {
-  background-image: url("a5.jpg");
+  background-image: url("a8.jpg");
   min-height: 400px;
 }
 
@@ -42,12 +42,12 @@ body, html {
 }
 
 .bgimg-6 {
-  background-image: url("p8.jpg");
+  background-image: url("fb3.jpg");
    min-height: 400px;
 }
 
 .bgimg-7{
-  background-image: url("ashish.jpg");
+  background-image: url("a5.jpg");
    min-height: 400px;
 }
 
@@ -61,19 +61,18 @@ body, html {
 }
 #gvShade
 {
-	color:black;
+	color:white;
 }
 .caption span.border {
   background-color: #111;
   color: #fff;
   font-size: 25px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
   color: rgba(189, 224, 255, 0.95);
 }
 .card {
@@ -81,7 +80,7 @@ h3 {
   max-width: 300px;
   margin: auto;
   text-align: center;
-  color: #3d3e40;
+  color: rgb(31, 48, 95);
   background: rgba(240, 248, 255, 0.62);
   font-family: -webkit-pictograph;
 }
@@ -95,7 +94,7 @@ h3 {
 }
 
 .title {
-  color: grey;
+  color: black;
   font-size: 18px;
 }
 
@@ -115,7 +114,7 @@ button {
 a {
   text-decoration: none;
   font-size: 22px;
-  color: white;
+  color: #f44336;
 }
 
 button:hover, a:hover {
@@ -201,7 +200,7 @@ h3
     font-family: -webkit-body;
     font-size: 17px;
     font-style: italic;
-    color: black;
+    color: white;
 }
 body {
     font-family: "Lato", sans-serif;
@@ -228,8 +227,6 @@ body {
     color: #818181;
     display: block;
     transition: 0.3s;
-	font-family:initial;
-	
 }
 
 .sidenav a:hover, .offcanvas a:focus{
@@ -244,26 +241,9 @@ body {
     margin-left: 50px;
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 17px;font-family: initial;}
-}
-
-
-@media (max-width: 768px) {
-    .navbar-default {
-        display: none !important;
-    }
-}
-@media (min-width: 769px) {
-    .navbar-default {
-        display: block !important;
-    }
+  .sidenav a {font-size: 18px;}
 }
 
 
@@ -538,12 +518,12 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color:rgba(240, 248, 255, 0.62);
 
 }
 .gvBg
 {
-	padding: 100px;
+	padding: 30px;
 	color: aliceblue;
     background-image: url(fb.jpg);
     background-position: 0px -65px;
@@ -551,4 +531,47 @@ input[type=submit]:hover {
 	
 }
 
+.shiftcenter{
+	text-align: center;
+    font-family: -webkit-pictograph;
+    font-size: larger;
+}
 
+.quotes
+{
+background-color: rgba(0, 0, 0, 0.68);
+font-size: 22px;
+color: #ffffff;
+font: bolder;
+font-family: -webkit-pictograph;
+font-style:italic;
+}
+
+.about
+{
+color: #ffffff;
+background-color: rgb(31, 48, 95);
+text-align:center;
+padding:50px 80px;
+text-align: justify;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.68);
+    color: white;
+    cursor: pointer;
+    /* padding: 15px; */
+    border-radius: 65px;
+    width: 75px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

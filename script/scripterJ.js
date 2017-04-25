@@ -38,6 +38,8 @@ $(document).ready(function(){
         // This hides the address bar:
         window.scrollTo(0, 1);
     }, 0);
+	
+	
 });
   
  /*    $("#clientView").load("client/ClientView.html",function(requestURL,statusURL,xhr){

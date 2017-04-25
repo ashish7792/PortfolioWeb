@@ -10,14 +10,15 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src ="script/script.js"></script>
 <script src ="script/scripterJ.js"></script>
-
  
 </head>
 <body onload="myFunction()" style="margin:0;">
 
 <div id="loader"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></button>
 
 <div id ="main-container">
+
 <div style="display:none;" id="myDiv" class="animate-bottom">
 
 
@@ -25,13 +26,14 @@
 
 <div id="mySidenav" class="sidenav" data-target="#myNavbar">
 
-   <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-   <a href="#pageNav">Home</a>
-   <a href="#AboutMe">About Me</a>
-    <a href="#PROFESSIONAL">Professional Skills</a>
-    <a href="#Education">Education</a>
-   <a href="#Portfolio">Portfolio</a>
-   <a href="#contact">Contact</a>
+   <a  href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+   <a  href="#pageNav">Home</a>
+   <a  href="#AboutMe">About Me</a>
+   <a  href="#PROFESSIONAL">Professional Skills</a>
+   <a  href="#Education">Education</a>
+   <a  href="#Portfolio">Portfolio</a>
+   <a  href="#contact">Contact</a>
+   <a  href="#resume">Resume</a>
 
 
 </div>
@@ -52,10 +54,9 @@
     <p class="title">Software Developer</p>
     <p>Current Company:Paramonas Technologies</p>
     <div style="margin: 24px 0;">
-      <a href="#"><i class="fa fa-dribbble"></i></a> 
-      <a href="#"><i class="fa fa-twitter"></i></a>  
+      <a href="#"><i class="fa fa-google-plus-official"></i></a> 
       <a href="#"><i class="fa fa-linkedin"></i></a>  
-      <a href="#"><i class="fa fa-facebook"></i></a> 
+      <a href="https://www.facebook.com/ashish.waghmare.5"><i class="fa fa-facebook"></i></a> 
    </div>
    <p><button style="color:white;"><a href="#contact">Contact</a></button></p>
   </div>
@@ -65,7 +66,7 @@
 
 <!--ABout ME Section-->
 <section id="AboutMe" class="slideanim">
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<div class="about">
   <h3 id="gvShade">About Me</h3>
     <p class="aboutme">Howdydo.I'm Ashish Waghmare,a Software Devloper and a Web Application Front-end Interface(GUI)Design.<p>
 	<p class="aboutme">With 2 years experience in the internet industry under my belt,<p>
@@ -82,7 +83,7 @@
 
 <div class="bgimg-2">
   <div class="caption">
-    <span class="border" style="background-color: rgba(0, 0, 0, 0.68);font-size: 22px;color: #ffffff;font: bolder;font-family: -webkit-pictograph;">"YOU ARE ONLY CONFINED BY THE WALLS YOU BUILD YOURSELF"</span>
+    <span class="border quotes">"YOU ARE ONLY CONFINED BY THE WALLS YOU BUILD YOURSELF"</span>
   </div>
 </div>
 
@@ -93,7 +94,7 @@
 <section id="PROFESSIONAL" class="slideanim">
 <div style="position:relative;">
 
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <div class="about">
    <h3 style="text-align:center;color:white;">PROFESSIONAL SKILLS</h3>
      <p>HTML</p>
 <div class="container">
@@ -122,8 +123,7 @@
 
 <div class="bgimg-3">
   <div class="caption">
-    <span class="border" style="background-color: rgba(0, 0, 0, 0.68);font-size: 22px;color: #ffffff;font: bolder;font-family: -webkit-pictograph;">"EDUCATION IS THE MOST POWERFUL WEAPON"</span>
-	
+    <span class="border quotes">"EDUCATION IS THE MOST POWERFUL WEAPON"</span>
   </div>
 </div>
 
@@ -132,7 +132,7 @@
 
 <section id="Education" class="slideanim">
 <div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <div class="about">
   <h3 style="text-align:center;color:white;">EDUCATION</h3>
     <section id="resume">
           <div class="section-padd">
@@ -143,21 +143,21 @@
                 <li> 
                   <h4><i class="fa fa-calendar ic-re"></i> 2013-2014</h4>
                   <i>CDAC</i>
-                  <h3><i class="fa fa-building-o ic-re"></i>Post Graduation Diploma in Software Technologies</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                  <h3><i class="fa fa-building-o ic-re"></i>CENTRE FOR DEVELOPMENT OF ADVANCED COMPUTING</h3>
+                  <p class="shiftcenter">Completed One Year  Post Graduation Diploma in Software Technologies from CDAC.</p>
                 </li>
                 <li> 
                   <h4><i class="fa fa-calendar ic-re"></i> 2011-2013</h4>
                   <i>Bachelor Degree</i>
                   <h3><i class="fa fa-building-o ic-re"></i> Mumbai University</h3>
-                  <p>B.com from Jhunjhunwala College, Vashi Maharashta Board in 2013.</p>
+                  <p class="shiftcenter">B.com from Jhunjhunwala College, Vashi Maharashta Board in 2013.</p>
                 </li>
                 <li> 
                   <h4><i class="fa fa-calendar ic-re"></i> 2007-2011</h4>
                   <i>High School</i>
                   <h3><i class="fa fa-building-o ic-re"></i> Mumbai University</h3>
-                  <p>HSC from Jhunjhunwala College, Vashi Maharashta Board in 2009</p>
-				  <p>SSC from SIWS, Wadala Maharashtra Board in 2007</p>
+                  <p class="shiftcenter">HSC from Jhunjhunwala College, Vashi Maharashta Board in 2009</p>
+				  <p class="shiftcenter">SSC from SIWS, Wadala Maharashtra Board in 2007</p>
                 </li>
               </ul><!-- end resume list-->
             </div>
@@ -170,7 +170,7 @@
 
 <div class="bgimg-4">
   <div class="caption">
-   <span class="border" style="background-color: rgba(0, 0, 0, 0.68);font-size: 22px;color: #ffffff;font: bolder;font-family: -webkit-pictograph;">"BELIEVE YOURSELF"</span>
+   <span class="border quotes">"BELIEVE YOURSELF"</span>
   </div>
 </div>
 
@@ -187,13 +187,13 @@
     <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="assets/images/a2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="assets/images/a3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="assets/images/a8.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
   </div>
 </div>
 
@@ -210,17 +210,17 @@
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="assets/images/a2.jpg" style="width:100%">
+      <img src="assets/images/a5.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="assets/images/a3.jpg" style="width:100%">
+      <img src="assets/images/a8.jpg" style="width:100%">
     </div>
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="assets/images/a4.jpg" style="width:100%">
+      <img src="assets/images/fb4.jpg" style="width:100%">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -232,16 +232,16 @@
 
 
     <div class="column">
-      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      <img class="demo cursor" src="assets/images/a5.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="assets/images/a8.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="assets/images/fb4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
     </div>
   </div>
 </div>
@@ -252,24 +252,17 @@
 
 <div class="bgimg-5">
   <div class="caption">
-   <span class="border" style="background-color: rgba(0, 0, 0, 0.68);font-size: 22px;color: #ffffff;font: bolder;font-family: -webkit-pictograph;">"NOTHING worth having COMES EASY"</span>
+   <span class="border quotes">"NOTHING WORTH HAVING COMES EASY"</span>
   </div>
 </div>
 
 
-
-
-<div class="bgimg-6">
-  <div class="caption">
-   <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
-  </div>
-</div>
 
 <!--CONTACT Section-->
 <section id="contact" class="slideanim">
 <div style="position:relative;">
  
-  <div style="color: #1d0303;background-color: #282E34;text-align: center;text-align: justify;">
+  <div class="about">
   <h3 style="text-align:center;color:white;margin-top: 0px;padding: 20px;">GET IN TOUCH</h3>
 <div class="container gvBg">
   <form action="#">
@@ -292,14 +285,15 @@
 
 
 
-
+<section id="resume">
 <div class="bgimg-7">
   <div class="caption">
-  <h3 style="text-align:center;color:white;margin-top: 0px;padding: 20px;">RESUME
+  <h3 style="text-align:center;color:black;margin-top: 0px;padding: 20px;">RESUME
 	    <h4 style="text-align:center;color:white;margin-top: 0px;padding: 20px;"><a href="assets/resume/Resume.docx" download="Resume"></h4>
-   <span class="border" style="background-color: rgba(0, 0, 0, 0.68);font-size: 22px;color: #ffffff;font: bolder;font-family: -webkit-pictograph;">"Click toDownload My Resume"</span>
+   <span class="border quotes" >"DOWNLOAD MY RESUME"</span>
  
   </div>
+  </section>
 </div>
 
 
