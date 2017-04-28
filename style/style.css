@@ -221,12 +221,14 @@ body {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 18px 15px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-family: initial;
+    font-style: italic;
 }
 
 .sidenav a:hover, .offcanvas a:focus{

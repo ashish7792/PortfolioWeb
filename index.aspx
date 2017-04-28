@@ -1,39 +1,45 @@
-<!Doctype html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ashish Waghmare|Profile</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="style/style.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ <link rel="stylesheet" href="style/style.css" />
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src ="script/script.js"></script>
-<script src ="script/scripterJ.js"></script>
- 
-</head>
-<body onload="myFunction()" style="margin:0;">
+ <script src ="script/script.js"></script>
+ <script src ="script/scripterJ.js"></script>
 
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+    <form id="form1" runat="server">
+    <div>
+    
 <div id="loader"></div>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></button>
 
 <div id ="main-container">
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-
-
+    
 <nav class="navbar navbar-inverse navbar-fixed-top">
 
 <div id="mySidenav" class="sidenav" data-target="#myNavbar">
 
-   <a  href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+   <a  href="javascript:void(0)" id="closebtn" onclick="closeNav()" style="margin-left: 130px;">&times;</a>
    <a  href="#pageNav">Home</a>
    <a  href="#AboutMe">About Me</a>
    <a  href="#PROFESSIONAL">Professional Skills</a>
-   <a  href="#Education">Education</a>
+   <a  href="#education">Education</a>
    <a  href="#Portfolio">Portfolio</a>
    <a  href="#contact">Contact</a>
-   <a  href="#resume">Resume</a>
+    <a  href="#resume">Resume</a>
 
 
 </div>
@@ -134,7 +140,7 @@
 <div style="position:relative;">
   <div class="about">
   <h3 style="text-align:center;color:white;">EDUCATION</h3>
-    <section id="resume">
+    <section id="education">
           <div class="section-padd">
             <div class="container-body clearfix">
               <div class="white-space-10"></div>
@@ -187,10 +193,10 @@
     <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
   </div>
   <div class="column">
-    <img src="assets/images/a8.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
   </div>
   <div class="column">
     <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
@@ -210,12 +216,12 @@
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="assets/images/a5.jpg" style="width:100%">
+      <img src="assets/images/a4.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="assets/images/a8.jpg" style="width:100%">
+      <img src="assets/images/a5.jpg" style="width:100%">
     </div>
     
     <div class="mySlides">
@@ -235,10 +241,10 @@
       <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a5.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a8.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+      <img class="demo cursor" src="assets/images/a5.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
     </div>
     <div class="column">
       <img class="demo cursor" src="assets/images/fb4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
@@ -267,15 +273,18 @@
 <div class="container gvBg">
   <form action="#">
     <label for="fname">Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <asp:TextBox ID="txtname" runat="server" placeholder="Your name.." required></asp:TextBox>
 
     <label for="lname">Email</label>
-    <input type="text" id="email"  name="email" placeholder="Your email..">
+
+    <asp:TextBox ID="txtEmail" runat="server" placeholder="Your email.." required></asp:TextBox>
 
     <label for="subject">Subject</label>
-    <textarea id="subject" placeholder="Write something.." style="height:100px"></textarea>
+    
+       <asp:TextBox ID="txtCommentDetails" runat="server"  placeholder="Comment" style="border:2px solid #d8874c;color:black;"  TextMode="MultiLine" Height="80px"  MaxLength="400" required></asp:TextBox>
 
-    <input type="submit" value="Submit" onclick="sendMail()">
+       <asp:Button ID="btnSend" runat="server" Text="Send"  style="border: 1px solid #333;background: #f44336;width: 10%;height: 50px;" OnClick="btnSend_Click"/>
   </form>
 </div>
 
@@ -288,16 +297,19 @@
 <section id="resume">
 <div class="bgimg-7">
   <div class="caption">
-  <h3 style="text-align:center;color:black;margin-top: 0px;padding: 20px;">RESUME
+  <h3 style="text-align:center;color:black;margin-top: 0px;padding: 20px;">RESUME</h3>
 	    <h4 style="text-align:center;color:white;margin-top: 0px;padding: 20px;"><a href="assets/resume/Resume.docx" download="Resume"></h4>
    <span class="border quotes" >"DOWNLOAD MY RESUME"</span>
  
   </div>
+    </div>
   </section>
 </div>
 
 
  </div>
 </div>
+
+    </form>
 </body>
 </html>
