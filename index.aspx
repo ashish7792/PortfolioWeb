@@ -9,12 +9,15 @@
 <title>Ashish Waghmare|Profile</title>
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
  <link rel="stylesheet" href="style/style.css" />
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src ="script/script.js"></script>
  <script src ="script/scripterJ.js"></script>
-
+    <style>
+  
+    </style>
 </head>
 
 <body onload="myFunction()" style="margin:0;">
@@ -50,16 +53,15 @@
 <!--Home Section-->
 <section id="pageNav">
 <div class="bgimg-1">
+
 <div class="card">
 
-<span id="spanNav" onclick="openNav()">&#9776;</span>
-
-  <img src="assets/images/fb1.jpg" alt="Ashish" style="width:75%">
+    <img src="assets/images/fb1.jpg" alt="" style="width:75%" id="hideProfpic" />
   <div class="container">
-    <h1>Ashish Waghmare</h1>
-    <p class="title">Software Developer</p>
-    <p>Current Company:Paramonas Technologies</p>
-    <div style="margin: 24px 0;">
+        <span id="spanNav" onclick="openNav()">&#9776;</span>
+    <h1 id="name" style="">Ashish Waghmare</h1>
+      <br/>
+    <div style="margin: 0px 0;">
       <a href="#"><i class="fa fa-google-plus-official"></i></a> 
       <a href="#"><i class="fa fa-linkedin"></i></a>  
       <a href="https://www.facebook.com/ashish.waghmare.5"><i class="fa fa-facebook"></i></a> 
@@ -68,10 +70,11 @@
   </div>
 </div>
 </div>
+    
 </section>
 
 <!--ABout ME Section-->
-<section id="AboutMe" class="slideanim">
+<section id="AboutMe" >
 <div class="about">
   <h3 id="gvShade">About Me</h3>
     <p class="aboutme">Howdydo.I'm Ashish Waghmare,a Software Devloper and a Web Application Front-end Interface(GUI)Design.<p>
@@ -97,28 +100,28 @@
 
 
 <!--Professional Skills Section-->
-<section id="PROFESSIONAL" class="slideanim">
+<section id="PROFESSIONAL" >
 <div style="position:relative;">
 
   <div class="about">
    <h3 style="text-align:center;color:white;">PROFESSIONAL SKILLS</h3>
      <p>HTML</p>
-<div class="container">
+<div class="containerProf">
   <div class="skills html">90%</div>
 </div>
 
 <p>CSS</p>
-<div class="container">
+<div class="containerProf">
   <div class="skills css">80%</div>
 </div>
 
 <p>JavaScript</p>
-<div class="container">
+<div class="containerProf">
   <div class="skills js">70%</div>
 </div>
 
 <p>ASP.NET,C#</p>
-<div class="container">
+<div class="containerProf">
   <div class="skills php">70%</div>
 </div>
   </div>
@@ -136,7 +139,7 @@
 
 <!--Education Section-->
 
-<section id="Education" class="slideanim">
+<section id="Education" >
 <div style="position:relative;">
   <div class="about">
   <h3 style="text-align:center;color:white;">EDUCATION</h3>
@@ -183,23 +186,23 @@
 
 <!--Portfolio Section-->
 
-<section id="Portfolio" class="slideanim">
+<section id="Portfolio" >
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
    <h3 style="text-align:center;color:white;">PORTFOLIO</h3>
    
 <div class="row">
   <div class="column">
-    <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
   </div>
   <div class="column">
-    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
   </div>
   <div class="column">
-    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/>
   </div>
   <div class="column">
-    <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
   </div>
 </div>
 
@@ -265,7 +268,7 @@
 
 
 <!--CONTACT Section-->
-<section id="contact" class="slideanim">
+<section id="contact" >
 <div style="position:relative;">
  
   <div class="about">
@@ -274,17 +277,18 @@
   <form action="#">
     <label for="fname">Name</label>
 
-      <asp:TextBox ID="txtname" runat="server" placeholder="Your name.." required></asp:TextBox>
-
+      <asp:TextBox ID="txtname" runat="server" placeholder="Your name.." ></asp:TextBox>
+     
     <label for="lname">Email</label>
 
-    <asp:TextBox ID="txtEmail" runat="server" placeholder="Your email.." required></asp:TextBox>
-
+    <asp:TextBox ID="txtEmail" runat="server" placeholder="Your email.."></asp:TextBox>
+       
     <label for="subject">Subject</label>
     
-       <asp:TextBox ID="txtCommentDetails" runat="server"  placeholder="Comment" style="border:2px solid #d8874c;color:black;"  TextMode="MultiLine" Height="80px"  MaxLength="400" required></asp:TextBox>
+       <asp:TextBox ID="txtCommentDetails" runat="server"  placeholder="Comment" style="border:2px solid #d8874c;color:black;"  TextMode="MultiLine" Height="80px"  MaxLength="400"></asp:TextBox>
+      
 
-       <asp:Button ID="btnSend" runat="server" Text="Send"  style="border: 1px solid #333;background: #f44336;width: 10%;height: 50px;" OnClick="btnSend_Click"/>
+       <asp:Button ID="btnSend" runat="server" Text="Send"  style="border: 1px solid #333;background: #f44336;height: 50px;" OnClick="btnSend_Click"/>
   </form>
 </div>
 

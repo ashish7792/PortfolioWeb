@@ -18,36 +18,36 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("a3.jpg");
+  background-image: url("assets/a3.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("a8.jpg");
+  background-image: url("assets/a8.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("a4.jpg");
+  background-image: url("assets/a4.jpg");
   min-height: 400px;
 }
 .bgimg-4 {
-  background-image: url("a2.jpg");
+  background-image: url("assets/a2.jpg");
    min-height: 400px;
 }
 
 .bgimg-5 {
-  background-image: url("a1.jpg");
+  background-image: url("assets/a1.jpg");
    min-height: 400px;
 }
 
 .bgimg-6 {
-  background-image: url("fb3.jpg");
+  background-image: url("assets/fb3.jpg");
    min-height: 400px;
 }
 
 .bgimg-7{
-  background-image: url("a5.jpg");
+  background-image: url("assets/a5.jpg");
    min-height: 400px;
 }
 
@@ -70,22 +70,30 @@ body, html {
   letter-spacing: 5px;
 }
 
+#name {
+    font-family: 'Sofia';
+    font-size: 25px;
+    margin-bottom: 95px;
+}
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: rgba(189, 224, 255, 0.95);
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  color: rgb(31, 48, 95);
-  background: rgba(240, 248, 255, 0.62);
-  font-family: -webkit-pictograph;
+     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    color: rgb(31, 48, 95);
+    /* background: rgba(240, 248, 255, 0.62); */
+    font-family: -webkit-pictograph;
 }
 
-
+#hideProfpic {
+    visibility: hidden !important;
+}
 
 .container::after {
   content: "";
@@ -94,8 +102,10 @@ h3 {
 }
 
 .title {
-  color: black;
-  font-size: 18px;
+     
+    color: #f44336;
+    font-size: 22px;
+    font-family: 'Sofia';
 }
 
 button {
@@ -134,10 +144,10 @@ button:hover, a:hover {
   color: white;
 }
 
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
+.html { background-color: #4CAF50;}
+.css {background-color: #2196F3;}
+.js {background-color: #f44336;}
+.php {background-color: #808080;}
 
 
 #loader {
@@ -256,7 +266,7 @@ body {
 	font-size:30px;
 	cursor:pointer;
 	align:left;
-	margin-right:260px;
+	margin-right:300px;
 	
 }
 
@@ -395,7 +405,7 @@ img.hover-shadow {
   border: 2px solid #ccc;
   background-color: #eee;
   border-radius: 5px;
-  margin: 16px 0
+  margin: 0px 0;
 }
 
 .container::after {
@@ -459,7 +469,7 @@ img.hover-shadow {
   border: 2px solid #ccc;
   background-color: #eee;
   border-radius: 5px;
-  margin: 16px 0
+  margin: 0px 0;
 }
 
 .container::after {
@@ -519,16 +529,19 @@ input[type=submit]:hover {
 }
 
 .container {
-    border-radius: 5px;
-    background-color:rgba(240, 248, 255, 0.62);
+      border-radius: 5px;
+    /* background-color: rgba(240, 248, 255, 0.62); */
+    background-image: url(assets/a3.jpg);
+    background-repeat: round;
+    opacity: 1.5;
 
 }
 .gvBg
 {
 	padding: 30px;
 	color: aliceblue;
-    background-image: url(fb.jpg);
-    background-position: 0px -65px;
+    background-image: url(assets/fb.jpg);
+    background-position: 0px 0px;
 	border: 0px;
 	
 }

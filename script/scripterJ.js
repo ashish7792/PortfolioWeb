@@ -22,7 +22,7 @@ $(document).ready(function(){
       });
     }  // End if
   });
-   $(window).scroll(function() {
+   /*$(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
           $(this).addClass("slide");
         }
     });
-  });
+  });*/
   
   window.addEventListener("load",function() {
     setTimeout(function(){
@@ -41,19 +41,7 @@ $(document).ready(function(){
 	
 	
 });
-  
- /*    $("#clientView").load("client/ClientView.html",function(requestURL,statusURL,xhr){
-		if(statusURL="success")
-		{
-		  alert("File Uploaded Succesfully");	
-		}
-		if(statusURL="error")
-		{
-		  alert("Error: File Not Found"+xhr.status +"" +xhr.statusURL);	
-		}
-	}); */
-	
- 
+
 });
 
 
