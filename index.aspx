@@ -317,5 +317,22 @@
 </div>
 
     </form>
+
+    <script>
+        $(document).ready(function () {
+            if ($(window).width() < 700 || $(window).height() < 500) {
+                $("#spanNav").hide();
+                alert("It's a mobile View");
+            }
+            else {
+                $("#spanNav").show();
+                alert("It's not a mobile View");
+            }
+
+        });
+
+    </script>
+
+
 </body>
 </html>
