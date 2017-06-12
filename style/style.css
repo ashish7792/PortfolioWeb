@@ -76,6 +76,16 @@ body, html {
     margin-bottom: 95px;
 }
 
+#hed {
+     font-family: 'Sofia';
+     font-size: 20px;
+     color: black;
+
+}
+#soft {
+    color:white;
+}
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;

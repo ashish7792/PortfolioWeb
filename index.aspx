@@ -52,11 +52,13 @@
 
 <!--Home Section-->
 <section id="pageNav">
+
 <div class="bgimg-1">
 
 <div class="card">
 
     <img src="assets/images/fb1.jpg" alt="" style="width:75%" id="hideProfpic" />
+    <h3 id="hed"><span id="soft">Software</span> Developer</h3>
   <div class="container">
         <span id="spanNav" onclick="openNav()">&#9776;</span>
     <h1 id="name" style="">Ashish Waghmare</h1>
