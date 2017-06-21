@@ -15,37 +15,34 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src ="script/script.js"></script>
  <script src ="script/scripterJ.js"></script>
-    <style>
-  
-    </style>
 </head>
 
 <body onload="myFunction()" style="margin:0;">
     <form id="form1" runat="server">
     <div>
-    
 <div id="loader"></div>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></button>
-
 <div id ="main-container">
-
 <div style="display:none;" id="myDiv" class="animate-bottom">
     
 <nav class="navbar navbar-inverse navbar-fixed-top">
 
 <div id="mySidenav" class="sidenav" data-target="#myNavbar">
-
-   <a  href="javascript:void(0)" id="closebtn" onclick="closeNav()" style="margin-left: 130px;">&times;</a>
-   <a  href="#pageNav">Home</a>
-   <a  href="#AboutMe">About Me</a>
-   <a  href="#PROFESSIONAL">Professional Skills</a>
-   <a  href="#education">Education</a>
-   <a  href="#Portfolio">Portfolio</a>
-   <a  href="#contact">Contact</a>
-    <a  href="#resume">Resume</a>
-
-
+    <div id="headerCon">
+     <a href="javascript:void(0)" id="closebtn" onclick="closeNav()" style="margin-left: 205px;border-bottom:0px;color: white;">&times;</a>
+		<img src="assets/images/fb1.jpg" alt="" style="width:70px;border-radius:50px;"/><span id="titleName"><p>Software Developer <br/><i class="fa fa-facebook-square" style="font-size:20px;color:whitesmoke;"></i>&nbsp;&nbsp;<i class="fa fa-google-plus-official" style="font-size:20px;color:whitesmoke;"></i>&nbsp;&nbsp;<i class="fa fa-instagram" style="font-size:20px;color:whitesmoke;"></i></p></span>
+     </div>
+   
+   <a  href="#pageNav" class="navBack">Home</a>
+   <a href="#AboutMe" class="navBack">About Me</a>
+   <a href="#PROFESSIONAL" class="navBack">Professional Skills</a>
+   <a href="#education" class="navBack">Education</a>
+   <a href="#Portfolio" class="navBack">Portfolio</a>
+   <a href="#contact" class="navBack">Contact</a>
+   <a href="#resume" class="navBack">Resume</a>
+    <span></span>
 </div>
+    
 </nav>
 
 
@@ -54,14 +51,13 @@
 <section id="pageNav">
 
 <div class="bgimg-1">
-
-<div class="card">
+   <span id="spanNav" onclick="openNav()">&#9776;</span>
+<div class="card" style="height:600px;">
 
     <img src="assets/images/fb1.jpg" alt="" style="width:75%" id="hideProfpic" />
-    <h3 id="hed"><span id="soft">Software</span> Developer</h3>
-  <div class="container">
-        <span id="spanNav" onclick="openNav()">&#9776;</span>
-    <h1 id="name" style="">Ashish Waghmare</h1>
+ <!--<div class="container">
+         <span id="spanNav" onclick="openNav()">&#9776;</span>
+  <h1 id="name" style="">Ashish Waghmare</h1>
       <br/>
     <div style="margin: 0px 0;">
       <a href="#"><i class="fa fa-google-plus-official"></i></a> 
@@ -69,7 +65,8 @@
       <a href="https://www.facebook.com/ashish.waghmare.5"><i class="fa fa-facebook"></i></a> 
    </div>
    <p><button style="color:white;"><a href="#contact">Contact</a></button></p>
-  </div>
+  </div>-->
+
 </div>
 </div>
     
@@ -109,7 +106,7 @@
    <h3 style="text-align:center;color:white;">PROFESSIONAL SKILLS</h3>
      <p>HTML</p>
 <div class="containerProf">
-  <div class="skills html">90%</div>
+  <div class="skills html">80%</div>
 </div>
 
 <p>CSS</p>
@@ -322,17 +319,31 @@
         $(document).ready(function () {
             if ($(window).width() < 700 || $(window).height() < 500) {
                 $("#spanNav").hide();
-                alert("It's a mobile View");
+               
             }
             else {
                 $("#spanNav").show();
-                alert("It's not a mobile View");
+              
             }
 
         });
 
     </script>
-
-
+    <script>
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 1;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width >= 80) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
 </body>
 </html>

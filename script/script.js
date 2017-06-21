@@ -30,19 +30,16 @@ function showPage() {
 }
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main-container").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("mySidenav").style.padding = "15px";
+    document.getElementById("main-container").style.marginLeft = "300px";
     
-	
-	
-	
-	
-	
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main-container").style.marginLeft= "0";
+    document.getElementById("main-container").style.marginLeft = "0";
+    document.getElementById("mySidenav").style.padding = "0px";
    
 
 	
@@ -84,6 +81,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
 
 
 
