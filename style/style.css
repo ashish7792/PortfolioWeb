@@ -5,8 +5,10 @@ body, html {
   color: #777;
 
 }
+table {
+    padding:45px 200px;
+}
 
- 
  
 .bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7{
   position: relative;
@@ -18,7 +20,7 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("assets/a3.jpg");
+  background-image: url("assets/dslr_02.jpg");
   min-height: 100%;
 }
 
@@ -61,12 +63,11 @@ body, html {
 }
 #gvShade
 {
-	color:white;
+	color:#f44336;
 }
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  font-size: 25px;
+.caption span.border 
+{ 
+  font-size: 20px;
   letter-spacing: 5px;
 }
 
@@ -132,9 +133,12 @@ button {
 }
 
 a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #f44336;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fefefe;
+    border: 0px solid black;
+    background: rgba(0, 0, 0, 0.84);
+    padding: 20px;
 }
 
 button:hover, a:hover {
@@ -154,7 +158,7 @@ button:hover, a:hover {
   color: white;
 }
 
-.html { background-color: #4CAF50;}
+.html {}
 .css {background-color: #2196F3;}
 .js {background-color: #f44336;}
 .php {background-color: #808080;}
@@ -218,9 +222,9 @@ h3
 {
     text-align: center;
     font-family: -webkit-body;
-    font-size: 17px;
+    font-size: 20px;
     font-style: italic;
-    color: white;
+    color: #111;
 }
 body {
     font-family: "Lato", sans-serif;
@@ -295,6 +299,8 @@ body {
 	cursor:pointer;
 	align:left;
 	margin-right:300px;
+    background: #f44336;
+    color: beige;
 	
 }
 
@@ -495,7 +501,7 @@ img.hover-shadow {
   
 .container {
   border: 2px solid #ccc;
-  background-color: #eee;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   margin: 0px 0;
 }
@@ -509,7 +515,7 @@ img.hover-shadow {
 .container img {
   float: left;
   margin-right: 20px;
-  border-radius: 50%;
+
 }
 
 .container span {
@@ -557,11 +563,13 @@ input[type=submit]:hover {
 }
 
 .container {
-      border-radius: 5px;
+        border-radius: 5px;
     /* background-color: rgba(240, 248, 255, 0.62); */
-    background-image: url(assets/a3.jpg);
+    /* background-image: url(assets/a3.jpg); */
     background-repeat: round;
     opacity: 1.5;
+   /* background: #121212;*/
+    border: 0px;
 
 }
 .gvBg
@@ -590,13 +598,13 @@ font-family: -webkit-pictograph;
 font-style:italic;
 }
 
-.about
+#about
 {
-color: #ffffff;
-background-color: rgb(31, 48, 95);
+color: #f44336;
 text-align:center;
-padding:50px 80px;
+padding:80px 44px;
 text-align: justify;
+
 }
 
 #myBtn {
@@ -637,4 +645,154 @@ text-align: justify;
     width: 48px;
     height: 48px;
     background: #f00;
+}
+
+.html {
+  border: 10px solid cyan;
+  border-radius: 120%;
+  border-top: 10px solid #000;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.progress{
+  max-width:1000px;
+  margin: 40px auto;
+}
+
+
+/* STYLES FOR PROGRESSBARS */
+
+.progress-radial, .progress-radial * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+    
+
+}
+
+
+
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.progress-radial {
+  float: left;
+  margin-right: 4%;
+  position: relative;
+  width: 20%;
+  border-radius: 50%;
+  animation: spin 5s infinite;
+}
+.progress-radial:first-child {
+  margin-left: 4%;
+   -webkit-animation: spin 5s infinite;
+  animation:spin 5s infinite;
+
+}
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+   position: absolute;
+    width: 80%;
+    background-color: #000;
+    border-radius: 50%;
+    font-size: x-large;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #f0f0f0;
+}
+
+.progress-radial .overlay p{
+    position: absolute;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    top:50%;
+    margin-top: -20px;
+}
+
+
+
+
+.about-text a {
+    margin-top: 30px;
+}
+
+.btn-style1 {
+    padding: 12px 22px;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.5s;
+    background-color: #164E71;
+    font-weight: 500;
+}
+
+#con {
+  position: relative;
+  width: 50%;
+}
+
+#image {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.overlay {
+ position: absolute;
+    /* bottom: -423px; */
+    left: 0px;
+    /* right: 11px; */
+    background-color: rgba(0, 0, 0, 0.68);
+    /* overflow: hidden; */
+    width: 70%;
+    height: 430px;
+    transition: .5s ease;
+    border-radius: 225px;
+}
+
+#con:hover .overlay {
+  height: 100%;
+}
+
+.socialbuttons {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.skiller {
+
+    background: url(assets/bookandpen.jpg);
+    width: 50%;
+    padding: 20px;
+    color: #e7f4ff;
+    height: 450px;
+    font-family: inherit;
+
+
 }

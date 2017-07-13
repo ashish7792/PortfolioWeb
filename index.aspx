@@ -5,23 +5,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <title>Ashish Waghmare|Profile</title>
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
- <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
- <link rel="stylesheet" href="style/style.css" />
+   <link rel="stylesheet" media="screen" href="css/style.css"/>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src ="script/script.js"></script>
  <script src ="script/scripterJ.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
+ <link rel="stylesheet" href="style/style.css" />
+
 </head>
 
 <body onload="myFunction()" style="margin:0;">
     <form id="form1" runat="server">
+    
+
+
     <div>
 <div id="loader"></div>
+            <div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></button>
+
+
+
 <div id ="main-container">
 <div style="display:none;" id="myDiv" class="animate-bottom">
     
@@ -52,41 +66,51 @@
 
 <div class="bgimg-1">
    <span id="spanNav" onclick="openNav()">&#9776;</span>
+
+
 <div class="card" style="height:600px;">
 
     <img src="assets/images/fb1.jpg" alt="" style="width:75%" id="hideProfpic" />
- <!--<div class="container">
-         <span id="spanNav" onclick="openNav()">&#9776;</span>
-  <h1 id="name" style="">Ashish Waghmare</h1>
-      <br/>
-    <div style="margin: 0px 0;">
-      <a href="#"><i class="fa fa-google-plus-official"></i></a> 
-      <a href="#"><i class="fa fa-linkedin"></i></a>  
-      <a href="https://www.facebook.com/ashish.waghmare.5"><i class="fa fa-facebook"></i></a> 
-   </div>
-   <p><button style="color:white;"><a href="#contact">Contact</a></button></p>
-  </div>-->
-
 </div>
 </div>
     
 </section>
 
 <!--ABout ME Section-->
-<section id="AboutMe" >
-<div class="about">
-  <h3 id="gvShade">About Me</h3>
-    <p class="aboutme">Howdydo.I'm Ashish Waghmare,a Software Devloper and a Web Application Front-end Interface(GUI)Design.<p>
-	<p class="aboutme">With 2 years experience in the internet industry under my belt,<p>
+ 
+
+<section id="AboutMe">
+
+    <div id="about">
+        <h3 id="gvShade">About Me</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="con">
+                 <img src="assets/images/dslr_01.jpg" alt="dslr_01"  id="image" />
+                <div class="overlay">
+                        <div class="socialbuttons">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <div class="col-md-8">
+              <p class="aboutme">Howdydo.I'm Ashish Waghmare,a Software Devloper and a Web Application Front-end Interface(GUI)Design.</p>
+	<p class="aboutme">With 2 years experience in the internet industry under my belt,</p>
 	 <p class="aboutme">living and working in Mumbai,Plain and Simple,I love coding and designing</p>
 	  <p class="aboutme">I'm passionate about creating clean,unique,elegant designs and code.</p>
 	   <p class="aboutme">I create professional and attractive websites & softwares built according to Web Standards</p>
-	    
-
-</div>
+         <a href="assets/resume/Resume.docx" download="Resume" class="btn-style1">Download my CV</a>
+            </div>
+        </div>
+    </div>
+   </div>
 </section>
-
-
 
 
 <div class="bgimg-2">
@@ -99,33 +123,56 @@
 
 
 <!--Professional Skills Section-->
-<section id="PROFESSIONAL" >
-<div style="position:relative;">
-
+<section id="PROFESSIONAL">
   <div class="about">
-   <h3 style="text-align:center;color:white;">PROFESSIONAL SKILLS</h3>
-     <p>HTML</p>
-<div class="containerProf">
-  <div class="skills html">80%</div>
-</div>
+   <h3 style="text-align:center;color:Black;">PROFESSIONAL SKILLS</h3>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 skiller">
+                   <h2>My Skills</h2>
+                                <h3>I provide the Best Quality</h3>
+                                <p style="padding:20px;">Hello currently website is in progrees will upadate it later on</p>
+                          <a href="#portfolio" class="btn-style2 skill-btn">SEE MY WORKS</a>
+              </div>
+                 <div class="col-md-6">
+                            <div class="progressbar-area">
+                                <p>WEB DESIGN</p>
+                                <div class="progress">
+                                    <div class="progress-bar prog-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%; transition: 2s ease-in;">
 
-<p>CSS</p>
-<div class="containerProf">
-  <div class="skills css">80%</div>
-</div>
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                                <p>THEME DEVELOPMENT</p>
+                                <div class="progress">
+                                    <div class="progress-bar prog-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; transition: 2s ease-in;">
 
-<p>JavaScript</p>
-<div class="containerProf">
-  <div class="skills js">70%</div>
-</div>
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                                <p>PLUGIN DEVELOPMENT</p>
+                                <div class="progress">
+                                    <div class="progress-bar prog-86" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%; transition: 2s ease-in;">
 
-<p>ASP.NET,C#</p>
-<div class="containerProf">
-  <div class="skills php">70%</div>
-</div>
-  </div>
-</div>
+                                        <span>86%</span>
+                                    </div>
+                                </div>
+                                <p>EMAIL MARKETING</p>
+                                <div class="progress">
+                                    <div class="progress-bar prog-94" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 94%; transition: 2s ease-in;">
+
+                                        <span>94%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+              </div>
+ 
+      </div>
+  
+    </div>
 </section>
+
 
 
 
@@ -345,5 +392,8 @@
             }
         }
     </script>
+
+  
+
 </body>
 </html>
