@@ -25,7 +25,7 @@ table {
 }
 
 .bgimg-2 {
-  background-image: url("assets/a8.jpg");
+  background-image: url("assets/a3.jpg");
   min-height: 400px;
 }
 
@@ -135,9 +135,9 @@ button {
 a {
     text-decoration: none;
     font-size: 26px;
-    color: #fefefe;
+    color: #f44336;
     border: 0px solid black;
-    background: rgba(0, 0, 0, 0.84);
+    /*background: rgba(0, 0, 0, 0.84);*/
     padding: 20px;
 }
 
@@ -451,7 +451,6 @@ img.hover-shadow {
 .container img {
   float: left;
   margin-right: 20px;
-  border-radius: 50%;
 }
 
 .container span {
@@ -759,15 +758,15 @@ text-align: justify;
 
 .overlay {
  position: absolute;
-    /* bottom: -423px; */
+    bottom: -333px;
     left: 0px;
     /* right: 11px; */
     background-color: rgba(0, 0, 0, 0.68);
     /* overflow: hidden; */
     width: 70%;
-    height: 430px;
+    height: 50px;
     transition: .5s ease;
-    border-radius: 225px;
+    /* border-radius: 225px; */
 }
 
 #con:hover .overlay {
@@ -788,11 +787,106 @@ text-align: justify;
 .skiller {
 
     background: url(assets/bookandpen.jpg);
-    width: 50%;
     padding: 20px;
     color: #e7f4ff;
     height: 450px;
     font-family: inherit;
 
 
+}
+
+.btn-style {
+    border: 0px solid beige;
+    background: rgba(0, 0, 0, 0.84);
+    cursor: pointer;
+}
+
+#myProgress {
+     width: 85%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+#myBar {
+     width: 85%;
+    height: 16px;
+    background-color: #164e71;
+    text-align: inherit;
+    line-height: 17px;
+    color: white;
+    font-size: 15px;
+}
+
+#html5
+{
+    font-size: 23px;
+    font-family: -webkit-pictograph;
+    color: #164e71;
+}
+
+
+#css3
+{
+    font-size: 23px;
+    font-family: -webkit-pictograph;
+    color: #45a082;
+}
+
+#jav
+{
+    font-size: 23px;
+    font-family: -webkit-pictograph;
+    color: #d94e44;
+}
+#asp
+{
+    font-size: 23px;
+    font-family: -webkit-pictograph;
+    color: #292929;
+}
+
+#myProgress2 {
+     width: 80%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+#myBar2 {
+     width: 80%;
+    height: 16px;
+    background-color: #45a082;
+    text-align: inherit;
+    line-height: 17px;
+    color: white;
+    font-size: 15px;
+}
+#myProgress3 {
+     width: 75%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+#myBar3 {
+     width: 75%;
+    height: 16px;
+    background-color: rgba(220, 53, 41, 0.83);
+    text-align: inherit;
+    line-height: 17px;
+    color: white;
+    font-size: 15px;
+}
+#myProgress4 {
+     width: 75%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+#myBar4 {
+     width: 75%;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: inherit;
+    line-height: 17px;
+    color: white;
+    font-size: 15px;
 }

@@ -55,6 +55,14 @@ $(window).on('resize', function () {
     });
 });
 
+$(document).ready(function () {
+    if ($(window).width() < 600 || $(window).height() < 500) {
+        $(".overlay").hide();
+    }
 
+    else {
+        $(".overlay").show();
+    }
+});
 
 

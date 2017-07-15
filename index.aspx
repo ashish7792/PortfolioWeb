@@ -13,28 +13,16 @@
  <script src ="script/script.js"></script>
  <script src ="script/scripterJ.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
- <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
  <link rel="stylesheet" href="style/style.css" />
 
 </head>
 
 <body onload="myFunction()" style="margin:0;">
     <form id="form1" runat="server">
-    
-
-
     <div>
 <div id="loader"></div>
-            <div id="particles-js"></div>
-
-<!-- scripts -->
-<script src="../particles.js"></script>
-<script src="js/app.js"></script>
-
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></button>
-
-
 
 <div id ="main-container">
 <div style="display:none;" id="myDiv" class="animate-bottom">
@@ -43,7 +31,7 @@
 
 <div id="mySidenav" class="sidenav" data-target="#myNavbar">
     <div id="headerCon">
-     <a href="javascript:void(0)" id="closebtn" onclick="closeNav()" style="margin-left: 205px;border-bottom:0px;color: white;">&times;</a>
+     <a href="javascript:void(0)" id="closebtn" onclick="closeNav()" style="margin-left: 205px;border-bottom:0px;color:black;">&times;</a>
 		<img src="assets/images/fb1.jpg" alt="" style="width:70px;border-radius:50px;"/><span id="titleName"><p>Software Developer <br/><i class="fa fa-facebook-square" style="font-size:20px;color:whitesmoke;"></i>&nbsp;&nbsp;<i class="fa fa-google-plus-official" style="font-size:20px;color:whitesmoke;"></i>&nbsp;&nbsp;<i class="fa fa-instagram" style="font-size:20px;color:whitesmoke;"></i></p></span>
      </div>
    
@@ -65,11 +53,9 @@
 <section id="pageNav">
 
 <div class="bgimg-1">
+
    <span id="spanNav" onclick="openNav()">&#9776;</span>
-
-
 <div class="card" style="height:600px;">
-
     <img src="assets/images/fb1.jpg" alt="" style="width:75%" id="hideProfpic" />
 </div>
 </div>
@@ -128,49 +114,47 @@
    <h3 style="text-align:center;color:Black;">PROFESSIONAL SKILLS</h3>
       <div class="container">
           <div class="row">
-              <div class="col-md-6 skiller">
+              <div class="col-md-12 skiller">
                    <h2>My Skills</h2>
                                 <h3>I provide the Best Quality</h3>
                                 <p style="padding:20px;">Hello currently website is in progrees will upadate it later on</p>
-                          <a href="#portfolio" class="btn-style2 skill-btn">SEE MY WORKS</a>
+                          <a href="#portfolio" class="btn-style">SEE MY WORKS</a>
               </div>
-                 <div class="col-md-6">
+                
+                     <div class="progress">
                             <div class="progressbar-area">
-                                <p>WEB DESIGN</p>
-                                <div class="progress">
-                                    <div class="progress-bar prog-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%; transition: 2s ease-in;">
-
-                                        <span>80%</span>
-                                    </div>
+                                <p id="html5">HTML5</p>
+                              <div id="myProgress">
+                               <div id="myBar" onmouseover="move()">85%</div>
+                              </div>
                                 </div>
-                                <p>THEME DEVELOPMENT</p>
-                                <div class="progress">
-                                    <div class="progress-bar prog-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; transition: 2s ease-in;">
-
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                                <p>PLUGIN DEVELOPMENT</p>
-                                <div class="progress">
-                                    <div class="progress-bar prog-86" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%; transition: 2s ease-in;">
-
-                                        <span>86%</span>
-                                    </div>
-                                </div>
-                                <p>EMAIL MARKETING</p>
-                                <div class="progress">
-                                    <div class="progress-bar prog-94" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 94%; transition: 2s ease-in;">
-
-                                        <span>94%</span>
-                                    </div>
-                                </div>
+                            
+                             <div class="progressbar-area">
+                                 <p id="css3">CSS3</p>
+                               <div id="myProgress2">
+                                 <div id="myBar2" onmouseover="move2()">80%</div>
+                              </div>
                             </div>
-                        </div>
-              </div>
- 
+                                 
+                       <div class="progressbar-area">
+                                 <p id="jav"> JAVASCRIPT</p>
+                               <div id="myProgress3">
+                                 <div id="myBar3" onmouseover="move3()">75%</div>
+                              </div>
+                            </div>
+
+                       <div class="progressbar-area">
+                                 <p id="asp">ASP.NET</p>
+                                <div id="myProgress4">
+                                 <div id="myBar4" onmouseover="move4()">75%</div>
+                              </div>
+                            </div>
+                            </div>
+                  
+                     </div>
+
+          </div>
       </div>
-  
-    </div>
 </section>
 
 
@@ -376,11 +360,12 @@
         });
 
     </script>
+ 
     <script>
         function move() {
             var elem = document.getElementById("myBar");
-            var width = 1;
-            var id = setInterval(frame, 10);
+            var width = 10;
+            var id = setInterval(frame, 50);
             function frame() {
                 if (width >= 80) {
                     clearInterval(id);
@@ -391,8 +376,7 @@
                 }
             }
         }
-    </script>
-
+</script>
   
 
 </body>
