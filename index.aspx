@@ -14,7 +14,8 @@
  <script src ="script/scripterJ.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
  <link rel="stylesheet" href="style/style.css" />
-
+ <link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
+ <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 </head>
 
 <body onload="myFunction()" style="margin:0;">
@@ -118,7 +119,7 @@
                    <h2>My Skills</h2>
                                 <h3>I provide the Best Quality</h3>
                                 <p style="padding:20px;">Hello currently website is in progrees will upadate it later on</p>
-                          <a href="#portfolio" class="btn-style">SEE MY WORKS</a>
+                          <a href="#Portfolio" class="btn-style">SEE MY WORKS</a>
               </div>
                 
                      <div class="progress">
@@ -172,36 +173,68 @@
 <section id="Education" >
 <div style="position:relative;">
   <div class="about">
-  <h3 style="text-align:center;color:white;">EDUCATION</h3>
-    <section id="education">
-          <div class="section-padd">
-            <div class="container-body clearfix">
-              <div class="white-space-10"></div>
-              <!-- resume list-->
-              <ul class="resume-list"> 
-                <li> 
-                  <h4><i class="fa fa-calendar ic-re"></i> 2013-2014</h4>
-                  <i>CDAC</i>
-                  <h3><i class="fa fa-building-o ic-re"></i>CENTRE FOR DEVELOPMENT OF ADVANCED COMPUTING</h3>
-                  <p class="shiftcenter">Completed One Year  Post Graduation Diploma in Software Technologies from CDAC.</p>
-                </li>
-                <li> 
-                  <h4><i class="fa fa-calendar ic-re"></i> 2011-2013</h4>
-                  <i>Bachelor Degree</i>
-                  <h3><i class="fa fa-building-o ic-re"></i> Mumbai University</h3>
-                  <p class="shiftcenter">B.com from Jhunjhunwala College, Vashi Maharashta Board in 2013.</p>
-                </li>
-                <li> 
-                  <h4><i class="fa fa-calendar ic-re"></i> 2007-2011</h4>
-                  <i>High School</i>
-                  <h3><i class="fa fa-building-o ic-re"></i> Mumbai University</h3>
-                  <p class="shiftcenter">HSC from Jhunjhunwala College, Vashi Maharashta Board in 2009</p>
-				  <p class="shiftcenter">SSC from SIWS, Wadala Maharashtra Board in 2007</p>
-                </li>
-              </ul><!-- end resume list-->
-            </div>
-          </div>
-        </section>
+  <h3 style="text-align:center;color:rgb(31, 48, 95);font-size:30px;">MY EXPERIENCE</h3>
+  <div class="container">
+  <ul class="timeline">
+    <li><div class="tldate">July 2017</div></li>
+    
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>JUNIOR SOFTWARE DEVELOPER</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2016-2017</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Currently working on a Real Estate Project</p>
+        </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>UI/UX DEVELOPER</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2015-2016</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Hope the weather gets a bit nicer...</p>
+            
+          <p>Y'know, with more sunlight.</p>
+        </div>
+      </div>
+    </li>
+    
+    <li><div class="tldate">Nov 2014</div></li>
+    
+    <li>
+      <div class="tl-circ"></div>
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>ASSOCIATE SOFTWARE DEVELOPER</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2014-2015</small></p>
+        </div>
+        <div class="tl-body">
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-panel">
+        <div class="tl-heading">
+          <h4>C-DAC</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2013-2014</small></p>
+        </div>
+        <div class="tl-body">
+          <p>Here you'll find some beautiful photography for your viewing pleasure, courtesy of <a href="http://lorempixel.com/">lorempixel</a>.</p>
+          
+          <p><img src="http://lorempixel.com/600/300/nightlife/" alt="lorem pixel"></p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
   </div>
 </div>
 </section>
@@ -219,24 +252,56 @@
 <section id="Portfolio" >
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-   <h3 style="text-align:center;color:white;">PORTFOLIO</h3>
+   <h3 style="text-align:center;color:white;">MY WORKS</h3>
    
 <div class="row">
   <div class="column">
-    <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
+    <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="image hover-shadow cursor"/>
+  
+
   </div>
   <div class="column">
-    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
+      <span>
+         
+    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="image hover-shadow cursor"/>
+     </span>
   </div>
   <div class="column">
-    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/>
+    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="image hover-shadow cursor"/>
+    
   </div>
   <div class="column">
-    <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
+    <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="image hover-shadow cursor"/>
+
   </div>
+    
 </div>
+<div class="row">
+  <div class="column">
+    <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="image hover-shadow cursor"/>
+  
 
+  </div>
+  <div class="column">
+      <span>
+         
+    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="image hover-shadow cursor"/>
+     </span>
+  </div>
+  <div class="column">
+    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="image hover-shadow cursor"/>
+    
+  </div>
+  <div class="column">
+    <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="image hover-shadow cursor"/>
 
+  </div>
+    
+</div>
+     
+ </div>     
+ </div>
+    
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -262,6 +327,31 @@
       <img src="assets/images/fb4.jpg" style="width:100%">
     </div>
     
+       <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="assets/images/a1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/images/a4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/images/a5.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/images/fb4.jpg" style="width:100%">
+    </div>
+
+
+
+
+
+
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -282,11 +372,23 @@
     <div class="column">
       <img class="demo cursor" src="assets/images/fb4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
     </div>
+
+       <div class="column">
+      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/images/a5.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/images/fb4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
   </div>
 </div>
-</div>
-</div>
-</section>
+    </section>
+
 
 
 <div class="bgimg-5">

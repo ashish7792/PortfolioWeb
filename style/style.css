@@ -432,7 +432,10 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+      box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+    background: antiquewhite;
+    opacity: 0.5;
+    
 }
 
 .container {
@@ -622,9 +625,6 @@ text-align: justify;
     width: 75px;
 }
 
-#myBtn:hover {
-  background-color: #555;
-}
 
 #myProgress {
   width: 100%;
@@ -846,7 +846,7 @@ text-align: justify;
 }
 
 #myProgress2 {
-     width: 80%;
+     width: 85%;
     background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
 }
@@ -861,7 +861,7 @@ text-align: justify;
     font-size: 15px;
 }
 #myProgress3 {
-     width: 75%;
+     width: 85%;
     background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
 }
@@ -876,7 +876,7 @@ text-align: justify;
     font-size: 15px;
 }
 #myProgress4 {
-     width: 75%;
+     width: 85%;
     background-color: rgba(0, 0, 0, 0.2);
     margin: auto;
 }
@@ -890,3 +890,4 @@ text-align: justify;
     color: white;
     font-size: 15px;
 }
+
