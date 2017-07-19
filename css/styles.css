@@ -14,7 +14,7 @@ img { border: 0; max-width: 100%; }
   list-style: none;
   padding:10px 56px 0px;
   position: relative;
-  background: #d4d4d4;
+  background: #212121;
 }
 
 .timeline:before {
@@ -150,7 +150,7 @@ img { border: 0; max-width: 100%; }
 .tl-heading h4 {
   margin: 0;
   color: #111;
-  font-size: 25px;
+
 }
 
 .tl-body p, .tl-body ul {

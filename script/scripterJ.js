@@ -22,7 +22,8 @@ $(document).ready(function(){
       });
     }  // End if
   });
-   /*$(window).scroll(function() {
+
+   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
 
@@ -31,7 +32,7 @@ $(document).ready(function(){
           $(this).addClass("slide");
         }
     });
-  });*/
+  });
   
   window.addEventListener("load",function() {
     setTimeout(function(){

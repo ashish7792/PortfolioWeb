@@ -12,13 +12,17 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src ="script/script.js"></script>
  <script src ="script/scripterJ.js"></script>
+
+
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+ <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css" />
  <link rel="stylesheet" href="style/style.css" />
  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 </head>
 
-<body onload="myFunction()" style="margin:0;">
+<body onload="myFunction()"  style="margin:0;">
     <form id="form1" runat="server">
     <div>
 <div id="loader"></div>
@@ -56,6 +60,7 @@
 <div class="bgimg-1">
 
    <span id="spanNav" onclick="openNav()">&#9776;</span>
+
 <div class="card" style="height:600px;">
     <img src="assets/images/fb1.jpg" alt="" style="width:75%" id="hideProfpic" />
 </div>
@@ -71,7 +76,7 @@
     <div id="about">
         <h3 id="gvShade">About Me</h3>
     <div class="container">
-        <div class="row">
+        <div class="row slideanim">
             <div class="col-md-4">
                 <div id="con">
                  <img src="assets/images/dslr_01.jpg" alt="dslr_01"  id="image" />
@@ -114,19 +119,21 @@
   <div class="about">
    <h3 style="text-align:center;color:Black;">PROFESSIONAL SKILLS</h3>
       <div class="container">
-          <div class="row">
-              <div class="col-md-12 skiller">
+          <div class="row slideanim">
+              <div class="col-md-6 skiller">
                    <h2>My Skills</h2>
                                 <h3>I provide the Best Quality</h3>
                                 <p style="padding:20px;">Hello currently website is in progrees will upadate it later on</p>
                           <a href="#Portfolio" class="btn-style">SEE MY WORKS</a>
               </div>
-                
-                     <div class="progress">
+               
+                     <div class="progress slideanim">
+                          <div class="col-md-6">
                             <div class="progressbar-area">
                                 <p id="html5">HTML5</p>
                               <div id="myProgress">
                                <div id="myBar" onmouseover="move()">85%</div>
+                                 
                               </div>
                                 </div>
                             
@@ -151,9 +158,9 @@
                               </div>
                             </div>
                             </div>
-                  
+                  </div>
                      </div>
-
+              
           </div>
       </div>
 </section>
@@ -175,7 +182,7 @@
   <div class="about">
   <h3 style="text-align:center;color:rgb(31, 48, 95);font-size:30px;">MY EXPERIENCE</h3>
   <div class="container">
-  <ul class="timeline">
+  <ul class="timeline slideanim">
     <li><div class="tldate">July 2017</div></li>
     
     <li>
@@ -227,9 +234,9 @@
           <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2013-2014</small></p>
         </div>
         <div class="tl-body">
-          <p>Here you'll find some beautiful photography for your viewing pleasure, courtesy of <a href="http://lorempixel.com/">lorempixel</a>.</p>
+          <p>Here you'll find some beautiful photography for your viewing pleasure, courtesy of ..</p>
           
-          <p><img src="http://lorempixel.com/600/300/nightlife/" alt="lorem pixel"></p>
+          <p><img src="assets/images/cdac.jpg" alt="cdac" /></p>
         </div>
       </div>
     </li>
@@ -254,7 +261,7 @@
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
    <h3 style="text-align:center;color:white;">MY WORKS</h3>
    
-<div class="row">
+<div class="row slideanim">
   <div class="column">
     <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="image hover-shadow cursor"/>
   
@@ -267,11 +274,11 @@
      </span>
   </div>
   <div class="column">
-    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="image hover-shadow cursor"/>
+    <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="image hover-shadow cursor"/>
     
   </div>
   <div class="column">
-    <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="image hover-shadow cursor"/>
+    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="image hover-shadow cursor"/>
 
   </div>
     
@@ -289,11 +296,11 @@
      </span>
   </div>
   <div class="column">
-    <img src="assets/images/a5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="image hover-shadow cursor"/>
+    <img src="assets/images/a1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="image hover-shadow cursor"/>
     
   </div>
   <div class="column">
-    <img src="assets/images/fb4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="image hover-shadow cursor"/>
+    <img src="assets/images/a4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="image hover-shadow cursor"/>
 
   </div>
     
@@ -309,48 +316,43 @@
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="assets/images/a1.jpg" style="width:100%">
+      <img src="assets/images/a1.jpg" style="width:100%" />
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="assets/images/a4.jpg" style="width:100%">
+      <img src="assets/images/a4.jpg" style="width:100%" />
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="assets/images/a5.jpg" style="width:100%">
+      <img src="assets/images/a1.jpg" style="width:100%" />
     </div>
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="assets/images/fb4.jpg" style="width:100%">
+      <img src="assets/images/a4.jpg" style="width:100%" />
     </div>
     
        <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="assets/images/a1.jpg" style="width:100%">
+      <img src="assets/images/a1.jpg" style="width:100%" />
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="assets/images/a4.jpg" style="width:100%">
+      <img src="assets/images/a4.jpg" style="width:100%" />
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="assets/images/a5.jpg" style="width:100%">
+      <img src="assets/images/a1.jpg" style="width:100%" />
     </div>
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="assets/images/fb4.jpg" style="width:100%">
+      <img src="assets/images/a4.jpg" style="width:100%" />
     </div>
-
-
-
-
-
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -361,29 +363,29 @@
 
 
     <div class="column">
-      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(1)" alt="" />
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(2)" alt="" />
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a5.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(3)" alt="" />
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/fb4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(4)" alt="" />
     </div>
 
        <div class="column">
-      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(1)" alt="" />
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(2)" alt="" />
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/a5.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+      <img class="demo cursor" src="assets/images/a1.jpg" style="width:100%" onclick="currentSlide(3)" alt="" />
     </div>
     <div class="column">
-      <img class="demo cursor" src="assets/images/fb4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+      <img class="demo cursor" src="assets/images/a4.jpg" style="width:100%" onclick="currentSlide(4)" alt="" />
     </div>
   </div>
 </div>
@@ -404,9 +406,11 @@
 <div style="position:relative;">
  
   <div class="about">
-  <h3 style="text-align:center;color:white;margin-top: 0px;padding: 20px;">GET IN TOUCH</h3>
+  <h3 style="text-align:center;color:#f44336;margin-top: 0px;padding: 20px;">GET IN TOUCH</h3>
 <div class="container gvBg">
-  <form action="#">
+    <div class="row slideanim">
+        <div class="col-md-4">
+<form action="#">
     <label for="fname">Name</label>
 
       <asp:TextBox ID="txtname" runat="server" placeholder="Your name.." ></asp:TextBox>
@@ -420,12 +424,62 @@
        <asp:TextBox ID="txtCommentDetails" runat="server"  placeholder="Comment" style="border:2px solid #d8874c;color:black;"  TextMode="MultiLine" Height="80px"  MaxLength="400"></asp:TextBox>
       
 
-       <asp:Button ID="btnSend" runat="server" Text="Send"  style="border: 1px solid #333;background: #f44336;height: 50px;" OnClick="btnSend_Click"/>
+       <asp:Button ID="btnSend" runat="server" Text="Send"  style="border: 0px solid #333;background: rgba(220, 53, 41, 0.83);height: 50px;cursor: pointer;" OnClick="btnSend_Click"/>
   </form>
+        </div>
+
+   </div>
+  </div>
+     <div class="container-fluid text-center">
+  <h2>SERVICES I OFFER</h2>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
 </div>
 
+
+
+
+
+
+
+
 </div>
-</div>
+    </div>
+    
 </section>
 
 
@@ -433,10 +487,38 @@
 <section id="resume">
 <div class="bgimg-7">
   <div class="caption">
-  <h3 style="text-align:center;color:black;margin-top: 0px;padding: 20px;">RESUME</h3>
-	    <h4 style="text-align:center;color:white;margin-top: 0px;padding: 20px;"><a href="assets/resume/Resume.docx" download="Resume"></h4>
-   <span class="border quotes" >"DOWNLOAD MY RESUME"</span>
- 
+  		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+				    .
+					<a href="#">About Me</a>
+					.
+					<a href="#">Professional Skills</a>
+					.
+					<a href="#">Experience</a>
+					.
+					<a href="#">Enquiry</a>
+					.
+					<a href="#">My Works</a>
+				</p>
+
+				<p id="CopyRgt">Copyright &copy; 2017 Ashish Waghmare | All rights reserved 2017</p>
+			</div>
+
+		</footer>
+
   </div>
     </div>
   </section>
@@ -479,7 +561,38 @@
             }
         }
 </script>
-  
+  <script>
+      function initialize() {
+          var mapOptions = {
+              center: new google.maps.LatLng(28.1823295, -82.352912),
+              zoom: 9,
+              mapTypeId: google.maps.MapTypeId.HYBRID,
+              scrollwheel: false,
+              draggable: false,
+              panControl: true,
+              zoomControl: true,
+              mapTypeControl: true,
+              scaleControl: true,
+              streetViewControl: true,
+              overviewMapControl: true,
+              rotateControl: true,
+          };
+          var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+    <script>
+        $('.js-input').keyup(function () {
+            if ($(this).val()) {
+                $(this).addClass('not-empty');
+            } else {
+                $(this).removeClass('not-empty');
+            }
+        });
+    </script>
+
+
+
 
 </body>
 </html>
