@@ -5,17 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ashish Waghmare|Profile</title>
    <link rel="stylesheet" media="screen" href="css/style.css"/>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src ="script/script.js"></script>
  <script src ="script/scripterJ.js"></script>
-
-
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
  <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css" />
  <link rel="stylesheet" href="style/style.css" />
  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
@@ -43,10 +41,9 @@
    <a  href="#pageNav" class="navBack">Home</a>
    <a href="#AboutMe" class="navBack">About Me</a>
    <a href="#PROFESSIONAL" class="navBack">Professional Skills</a>
-   <a href="#education" class="navBack">Education</a>
+   <a href="#education" class="navBack">Experience</a>
    <a href="#Portfolio" class="navBack">Portfolio</a>
    <a href="#contact" class="navBack">Contact</a>
-   <a href="#resume" class="navBack">Resume</a>
     <span></span>
 </div>
     
@@ -56,14 +53,10 @@
 
 <!--Home Section-->
 <section id="pageNav">
-
+     
 <div class="bgimg-1">
-
    <span id="spanNav" onclick="openNav()">&#9776;</span>
-
-<div class="card" style="height:600px;">
-    <img src="assets/images/fb1.jpg" alt="" style="width:75%" id="hideProfpic" />
-</div>
+    <img src="assets/images/dslr_02-min.jpg" />
 </div>
     
 </section>
@@ -227,7 +220,7 @@
         </div>
       </div>
     </li>
-    <li class="timeline-inverted">
+    <!--<li class="timeline-inverted">
       <div class="timeline-panel">
         <div class="tl-heading">
           <h4>C-DAC</h4>
@@ -239,7 +232,7 @@
           <p><img src="assets/images/cdac.jpg" alt="cdac" /></p>
         </div>
       </div>
-    </li>
+    </li>-->
   </ul>
 </div>
   </div>
@@ -424,51 +417,12 @@
        <asp:TextBox ID="txtCommentDetails" runat="server"  placeholder="Comment" style="border:2px solid #d8874c;color:black;"  TextMode="MultiLine" Height="80px"  MaxLength="400"></asp:TextBox>
       
 
-       <asp:Button ID="btnSend" runat="server" Text="Send"  style="border: 0px solid #333;background: rgba(220, 53, 41, 0.83);height: 50px;cursor: pointer;" OnClick="btnSend_Click"/>
+       <asp:Button ID="btnSend" runat="server" Text="Send"  OnClick="btnSend_Click"/>
   </form>
         </div>
 
    </div>
   </div>
-     <div class="container-fluid text-center">
-  <h2>SERVICES I OFFER</h2>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-</div>
 
 
 
@@ -477,11 +431,26 @@
 
 
 
+
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+    function myMap() {
+        var myCenter = new google.maps.LatLng(19.0166, 73.0966);
+        var mapProp = { center: myCenter, zoom: 12, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var marker = new google.maps.Marker({ position: myCenter });
+        marker.setMap(map);
+    }
+</script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAS4tK-DBWottx9W04_tn_dWBeXcnqt7M"></script>
+
+  
 </div>
     </div>
     
 </section>
-
 
 
 <section id="resume">
@@ -502,15 +471,15 @@
 
 				<p class="footer-links">
 					<a href="#">Home</a>
-				    .
+				    
 					<a href="#">About Me</a>
-					.
+					
 					<a href="#">Professional Skills</a>
-					.
+					
 					<a href="#">Experience</a>
-					.
+					
 					<a href="#">Enquiry</a>
-					.
+					
 					<a href="#">My Works</a>
 				</p>
 
@@ -530,7 +499,7 @@
 
     </form>
 
-    <script>
+   <script>
         $(document).ready(function () {
             if ($(window).width() < 700 || $(window).height() < 500) {
                 $("#spanNav").hide();
@@ -542,7 +511,7 @@
             }
 
         });
-
+            
     </script>
  
     <script>
@@ -561,26 +530,7 @@
             }
         }
 </script>
-  <script>
-      function initialize() {
-          var mapOptions = {
-              center: new google.maps.LatLng(28.1823295, -82.352912),
-              zoom: 9,
-              mapTypeId: google.maps.MapTypeId.HYBRID,
-              scrollwheel: false,
-              draggable: false,
-              panControl: true,
-              zoomControl: true,
-              mapTypeControl: true,
-              scaleControl: true,
-              streetViewControl: true,
-              overviewMapControl: true,
-              rotateControl: true,
-          };
-          var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
+  
     <script>
         $('.js-input').keyup(function () {
             if ($(this).val()) {

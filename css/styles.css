@@ -12,7 +12,7 @@ img { border: 0; max-width: 100%; }
 /** timeline box structure **/
 .timeline {
   list-style: none;
-  padding:10px 56px 0px;
+  padding:14px 75px 25px;
   position: relative;
   background: #212121;
 }
@@ -46,6 +46,7 @@ img { border: 0; max-width: 100%; }
   position: relative;
 }
 
+
 .timeline li:before, .timeline li:after {
   content: " ";
   display: table;
@@ -57,21 +58,33 @@ img { border: 0; max-width: 100%; }
   content: " ";
   display: table;
 }
+    
+.timeline li .tl-circ:hover
+{
+    border: 5px solid #f4511e;
+}
+    .timeline li .timeline-panel:hover
+     {
+         border: 3px solid #f4511e;
+     }
+
 
 /** timeline panels **/
 .timeline li .timeline-panel {
-  width: 46%;
-  float: left;
-  background: #fff;
-  border: 1px solid #d4d4d4;
-  padding: 20px;
-  position: relative;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 0px;
-  -webkit-box-shadow: 0 13px 9px #d4d4d4;
-  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
- box-shadow: 1px 19px 9px 0px rgba(0, 0, 0, 0.35);
+     width: 46%;
+    float: left;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    padding: 20px;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 13px 9px #d4d4d4;
+    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 19px 9px 0px rgba(0, 0, 0, 0.35);
+    font-family: cursive;
+    color: #1f305f;
 }
 
 /** panel arrows **/
